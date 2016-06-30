@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProfile"
+            android:text="Riddhi"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:text="rids.esprit@gmail.com"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtEmail"
+            android:text="02-03-2016"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+</RelativeLayout>

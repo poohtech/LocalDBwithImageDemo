@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <ListView
+        android:id="@+id/empListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#454545"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/llEditView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/updateImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="#d3d3d3" />
+
+        <EditText
+            android:id="@+id/edtEditname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtEditemail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEditname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Enter Salary"
+            android:inputType="textEmailAddress" />
+
+
+        <LinearLayout
+            android:id="@+id/reldate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtEditemail"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtEditdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Select Date"
+                android:inputType="textPersonName" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/ic_menu_my_calendar" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reldate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Update" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
